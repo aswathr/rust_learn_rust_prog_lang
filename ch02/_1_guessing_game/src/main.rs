@@ -4,9 +4,9 @@ fn main() {
     println!("Guess the number!");
     println!("Input your guess!");
 
-    let apples = 5; // let creates a variable; variables are immutable by default; the type of the variable is inferred here
+    let _apples = 5; // let creates a variable; variables are immutable by default; the type of the variable is inferred here; BTW, the underscore behind apples is added because Rust does not allow unused variables, but if intentional we need to prefix it with a underscore
     let mut guess = String::new(); // `mut` makes a variable mutable; `String::new` is a function that returns a `String` instance
-    // apples = 10; // This is illegal
+    // _apples = 10; // This is illegal
     // guess = str("Hello world!"); // This is legal
 
     io::stdin() // `stdin` is a function that handles user input; we could also use `std::io::stdin()` instead of `io::stdin()` and avoid the `use std::io` line; this returns a instance of type `std::io::Stdin`
