@@ -1,7 +1,11 @@
-use std::io; /// import statement; [std] -> standard library; [io] -> input/output library
+use std::io; // import statement; [std] -> standard library; [io] -> input/output library
+use rand::Rng; // Rng is a trait and apparently we need to import it for implementers of the trait to be used in this file
 
 fn main() {
     println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(0..=100); //generates a random number in the range
+    println!("The secret number is {secret_number}"); // this is for debugging
     println!("Input your guess!");
 
     let _apples = 5; // let creates a variable; variables are immutable by default; the type of the variable is inferred here; BTW, the underscore behind apples is added because Rust does not allow unused variables, but if intentional we need to prefix it with a underscore
