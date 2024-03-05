@@ -58,4 +58,4 @@ arrays have fixed number of elements once defined (`vector` could increase or de
 array literals may be expressed within square brackets (`let a: [i32; 5] = [1, 2, 3, 4, 5];`, where `i32` is the type and `5` is the size of the array)<br>
 `[3; 5]` is the same as `[3, 3, 3, 3, 3]`<br>
 the first element of the array is `a[0]`, the second `a[1]` and so on<br>
-accessing a element out of bounds will create a panic, i.e. `a[5]`, which tries to access the sixth element when there are only five elements
+accessing a element out of bounds will create a panic, i.e. `a[5]`, which tries to access the sixth element when there are only five elements<br>
