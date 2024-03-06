@@ -1,5 +1,5 @@
 fn main() {
-    another_fn(5);
+    another_fn(5); // note that the arguments are unlabelled
     print_labeled_measurement(5, 'h');
 
     fn invalid_assignment() {
